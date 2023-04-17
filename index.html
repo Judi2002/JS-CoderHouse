@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
+</head>
+<body>
+
+    <div id="total">
+
+    Hola, bienvenido a la calculadora de cuentas mensuales. <br>
+    Por favor ingrese su nombre de usuario y su clave o registrese correspondientemente. <br>
+
+        <h1>Iniciar sesion</h1> 
+        Email: <br>
+        <input type="text" id="ingresar_usuario"> <br>
+        Contraseña: <br>
+        <input type="text" id="ingresar_clave"> <br> <br>
+        <button id="iniciar_sesion">Iniciar sesion</button> <br> <br> <br>
+        
+        <h1>Registrarse</h1> 
+        Email: <br>
+        <input type="text" id="registrar_usuario"> <br>
+        Contraseña: <br>
+        <input type="text" id="registrar_clave"> <br> <br>
+        <button id="registrarse">Registrarse</button>
+
+    </div>
+    <script src="sweetalert2.all.min.js"></script>
+
+    <script src="js/miarchivo.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>   
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("kpwaszjkWMkZIbnMp");
+    })();
+</script>
+
+</body> 
+</html>
